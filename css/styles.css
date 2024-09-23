@@ -723,7 +723,7 @@ border-top: none;
     background-color: rgba(46, 47, 66, 0.4);
     backdrop-filter: blur(4px);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: opacity, visibility;
+    transition-property: opacity, visibility, transform;
 
     }
 
@@ -766,25 +766,25 @@ border-top: none;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: var(--color-accent);
     border-radius: 50%;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: border, background-color;
-
-}
-
-.modal-btn:hover .modal-btn-icon,
-.modal-btn:focus .modal-btn-icon {
-    fill: var(--color-white-background);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn-icon {
     fill: var(--color-primary-dark);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn:hover, 
 .modal-btn:focus {
     background-color: var(--color-primary-state);
     border: none;
+}
+
+.modal-btn:hover .modal-btn-icon,
+.modal-btn:focus .modal-btn-icon {
+    fill: var(--color-white-background);
+    /* transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .modal-caption {
@@ -948,9 +948,7 @@ border-top: none;
     color: var(--color-white-background);
     background-color: var(--color-primary-brand);
     border: none;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property:background-color, border;
-
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-order:hover,
