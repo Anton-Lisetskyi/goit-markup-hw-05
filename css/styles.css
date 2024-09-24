@@ -875,7 +875,7 @@ border-top: none;
 }
 
 .form-comment:focus {
-    border-color: var(--color-primary-brand);
+    border-color: #4D5AE5;
 }
 
 .form-wrapper-textarea {
