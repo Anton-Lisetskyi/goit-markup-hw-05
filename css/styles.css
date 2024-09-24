@@ -779,7 +779,7 @@ border-top: none;
 
 .modal-btn:hover, 
 .modal-btn:focus {
-    background-color: var(--color-primary-state);
+    background-color: #404bbf;
     border: none;
 }
 
