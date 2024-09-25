@@ -922,13 +922,13 @@ border-top: none;
     fill: var(--color-light);
 }
 
-.input[type="checkbox"]:checked + .checkbox {
+.input[type="checkbox"]:checked + .user-privacy-line > .checkbox {
     background-color: #404BBF;
     border: none;
     fill: #FFFFFF;
 }
 
-.agreement-line {
+.user-privacy-line {
     display: block;
     font-size: 12px;
     line-height: 1.17;
