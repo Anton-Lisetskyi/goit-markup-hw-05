@@ -916,7 +916,7 @@ border-top: none;
 .input-checkbox:checked + .user-privacy-line > .checkbox {
     background-color: var(--color-primary-state);
     border: none;
-    fill: var(--color-white-background);
+    fill: #F4F4FD;
 }
 
 .user-privacy-line {
